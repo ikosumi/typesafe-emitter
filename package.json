@@ -1,14 +1,22 @@
 {
   "name": "@ikosumi/typesafe-emitter",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Type-safe event emitter with compile-time event name and payload type checking",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "test": "jest",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test",
+    "example:game": "ts-node examples/game-events.ts",
+    "example:chat": "ts-node examples/chat-app.ts",
+    "example:form": "ts-node examples/form-validation.ts"
   },
+  "files": [
+    "dist",
+    "src"
+  ],
   "keywords": [
     "events",
     "emitter",
@@ -20,6 +28,14 @@
   ],
   "author": "Ilir Kosumi <ilirkosumi@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ikosumi/typesafe-emitter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ikosumi/typesafe-emitter/issues"
+  },
+  "homepage": "https://github.com/ikosumi/typesafe-emitter#readme",
   "devDependencies": {
     "@types/jest": "^29.5.12",
     "jest": "^29.7.0",
