@@ -1,0 +1,30 @@
+# Source code
+src/
+
+# Tests
+__tests__/
+*.test.ts
+jest.config.js
+
+# Examples
+examples/
+
+# Config files
+.gitignore
+tsconfig.json
+.prettierrc
+.eslintrc
+
+# IDE files
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Dependencies
+node_modules/
+
+# Misc
+.DS_Store 
