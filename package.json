@@ -14,7 +14,8 @@
     "example:form": "ts-node examples/form-validation.ts",
     "benchmark": "ts-node benchmarks/index.ts",
     "example:wildcards": "ts-node examples/advanced-wildcards.ts",
-    "example:async-errors": "ts-node examples/async-and-errors.ts"
+    "example:async-errors": "ts-node examples/async-and-errors.ts",
+    "lint": "eslint . --ext .ts"
   },
   "files": [
     "dist",
@@ -46,6 +47,9 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3",
     "benchmark": "^2.1.4",
-    "@types/benchmark": "^2.1.5"
+    "@types/benchmark": "^2.1.5",
+    "eslint": "^9.27.0",
+    "@typescript-eslint/parser": "^8.32.1",
+    "@typescript-eslint/eslint-plugin": "^8.32.1"
   }
 }
